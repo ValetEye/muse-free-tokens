@@ -1,4 +1,18 @@
-# muse-free-tokens
+<p align="center">
+  <img
+    src="assets/banner.jpg"
+    alt="Muse Free Tokens — a cute moose valet with a monocle holds a single gold key between a warm local HTTP box and a bright cloud window, under the ValetEye mark and the title Muse Free Tokens"
+    width="100%"
+  >
+</p>
+
+# Muse Free Tokens
+
+The goal of this repo is to let **other apps** use **your Muse
+subscription**. Cursor, LibreChat, curl, or anything that speaks the
+OpenAI chat API can send prompts here. Muse does the inference. This
+does **not** give you free tokens to spend *inside* Muse. It is the
+opposite: Muse is the side you already pay for, and other apps ride it.
 
 A **local, single-user** OpenAI-compatible HTTP bridge. The only model it
 serves is `muse-free-tokens`. Behind that name is **your own** Muse agent,
@@ -320,6 +334,7 @@ automatic Cursor settings writer in this tree.
 
 ## Repository layout
 
+- `assets/banner.jpg` — README / GitHub social banner.
 - `bridge.py` — the server and setup printer.
 - `tests/run_tests.py` — isolated end-to-end suite (`python3 tests/run_tests.py`).
 - `.github/workflows/test.yml` — CI: Python 3.9 and 3.12 run that suite.
