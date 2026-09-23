@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
-# poll-example.sh — skeleton: scan the spool for new prompts.
+# poll-example.sh — optional local-filesystem skeleton.
 #
-# This is NOT a complete worker. It shows the scan-and-claim mechanics;
-# you must wire the "new prompt claimed" branch into whatever wakes your
-# Muse agent (scheduled agent, hook system, cron that launches an agent
-# run, etc.). See worker/WORKER.md for the full contract.
+# Muse itself should use GET /v1/worker/next (see WORKER.md), not this.
+# This script is only for a worker that already runs on the same machine
+# as the bridge and can see the spool directory.
 #
 # Usage: SPOOL=~/.muse-free-tokens/spool ./poll-example.sh
 set -euo pipefail
